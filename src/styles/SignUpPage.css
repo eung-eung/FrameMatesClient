@@ -126,3 +126,10 @@
     color: #235A8F;
     text-decoration: none;
 }
+
+.logo {
+    position: absolute;
+    top: -10%;
+    display: block;
+    left: 25px;
+}

@@ -17,6 +17,18 @@ export default function SignUpForm({ prop }) {
             setTimeout(() => setLoading(false), 1000)
         }
     }, [])
+
+    // SIGN UP SUBMIT
+    const handleSignUp = e => {
+        e.preventDefault()
+
+    }
+
+    // LOG IN SUBMIT
+    const handleLogin = e => {
+        e.preventDefault()
+    }
+
     return (
         <>
 
@@ -79,12 +91,12 @@ export default function SignUpForm({ prop }) {
                             {
                                 page === 'login'
                                     ? <>
-                                        <button className='form-button'>Sign in</button>
+                                        <button onClick={handleLogin} className='form-button'>Sign in</button>
                                         <div className='other-title'>Or <strong>signin</strong>  with</div>
                                     </>
                                     :
                                     <>
-                                        <button className='form-button'>Sign up</button>
+                                        <button onClick={handleSignUp} className='form-button'>Sign up</button>
                                         <div className='other-title'>Or <strong>signup</strong>  with</div>
                                     </>
                             }
