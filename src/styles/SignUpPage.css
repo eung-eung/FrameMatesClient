@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form-container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+
+}
+
+.form-image {
+    width: 50%;
+}
+
+#sign-up-form {
+    width: 50%;
+    margin-left: 30px;
+}
+
+.title {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.form-item label {
+    margin-bottom: 4px;
+}
+
+.form-item input {
+    padding: 15px 20px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #060606;
+}
+
+.form-item input:focus {}
+
+.form-agree {
+    flex-direction: row;
+    user-select: none;
+    align-items: center;
+}
+
+.form-agree input {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+
+}
+
+.form-agree label {
+    color: #060606;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-button {
+    position: relative;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #235A8F;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+.other-sign-up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-up-option {
+    border: 1px solid #235A8F;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+}
+
+.other-title {
+    position: relative;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
+}
+
+.other-title:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: #060606;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.log-in {
+    margin-top: 20px;
+    font-weight: 600;
+
+}
+
+.go-login {
+    color: #235A8F;
+    font-weight: 600;
+}
+
+.go-login a {
+    color: #235A8F;
+    text-decoration: none;
+}
