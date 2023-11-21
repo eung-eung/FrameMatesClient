@@ -1,6 +1,6 @@
 import React from 'react'
 import HighlightStudio from './HighlightStudio'
-
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 export default function Highlight() {
     return (
         <div className='highlight-part' id='highlight'>
@@ -11,7 +11,9 @@ export default function Highlight() {
                 <HighlightStudio />
                 <HighlightStudio />
             </div>
-
+            <div className='arrow-down' onClick={() => window.location.href = "#app"}>
+                <ArrowDownwardIcon />
+            </div>
         </div>
     )
 }
