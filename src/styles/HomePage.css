@@ -319,7 +319,8 @@ html {
     width: 40px;
 }
 
-.download-item {
+.download-item { 
+    cursor: pointer;
     display: flex;
     font-weight: 400;
     align-items: center;

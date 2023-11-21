@@ -5,12 +5,13 @@ import { useCookies } from 'react-cookie'
 
 export default function UseToken() {
     const [cookies, setCookie, removeCookie] = useCookies(['user']);
-
+    
     const getToken = () => {
         try {
-            const userToken = cookies.user
+            const userToken = cookies?.user
+            
             if (userToken) {
-                if (jwtDecode(userToken).id) return userToken
+                if (jwtDecode(userToken).sub) return userToken
             }
             return null
         } catch (error) {
