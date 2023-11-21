@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export default function Studio() {
+    const navigate = useNavigate()
     return (
         <div className='studio-item'>
             <img src='/images/Frame74.png' />
@@ -12,7 +14,7 @@ export default function Studio() {
             </span>
             <div className='btn-box'>
                 <button className='btn-detail'>More details</button>
-                <button className='btn-booking'>Booking</button>
+                <button className='btn-booking' onClick={() => navigate("/studio/booking")}>Booking</button>
             </div>
             <button className='btn-favorite'>Favorite</button>
         </div>

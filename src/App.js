@@ -8,6 +8,7 @@ import UseToken from "./utils/UseToken"
 import StudioPage from './pages/StudioPage';
 import { useState } from 'react';
 import Header from './components/homePageComponents/header/Header';
+import BookingPage from './pages/BookingPage';
 function Page(props) {
   useDocumentTitle(`${props.title}`)
   return <h2>{props.content}</h2>
@@ -33,11 +34,20 @@ function App() {
           </ProtectedRoute>
         } />
 
-        <Route path='/studio' title="Studio" element={
-          // <ProtectedRoute page="signUp" user={getToken}>
-          <Page title="Studio" content={<StudioPage />} />
-          // </ProtectedRoute>
-        } />
+        <Route path='/studio'>
+          <Route index={true} title="Studio" element={
+            // <ProtectedRoute page="signUp" user={getToken}>
+            <Page title="Studio" content={<StudioPage />} />
+            // </ProtectedRoute>
+          } />
+
+          <Route path='booking' title="Booking" element={
+            // <ProtectedRoute page="signUp" user={getToken}>
+            <Page title="Booking" content={<BookingPage />} />
+            // </ProtectedRoute>
+          } />
+        </Route>
+
       </Routes>
 
     </div>

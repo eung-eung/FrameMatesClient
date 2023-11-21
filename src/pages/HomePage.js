@@ -10,7 +10,6 @@ export default function HomePage({ setNav }) {
 
     return (
         <div className='container-home'>
-
             <HomeSummary setNav={setNav} />
             <About />
             <Highlight />

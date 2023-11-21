@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.booking-part {
+    margin-top: 10%;
+
+}
+
+.step-by-step {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.step-item {
+    position: relative;
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.holder-step {
+    display: inline-block;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid #000000;
+}
+
+.step-item:not(:last-child):after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 1px;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000000;
+}
+
+.booking-part {
+    display: flex;
+}
+
+.booking-studio-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-studio {
+    border: 1px solid #000000;
+    width: 100%;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.body .sub-title {
+    font-size: 10px;
+    color: #000000;
+    font-weight: 200;
+}
+
+.studio-description {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.studio-description-image {
+    flex-basis: 10%;
+
+}
+
+.studio-description img {
+    width: 50px;
+    object-fit: contain;
+    height: 50px;
+}
+
+.studio-description .studio-description-item {
+    flex-basis: 60%;
+
+}
+
+.studio-description .studio-description-category {
+    flex-basis: 30%;
+
+}
+
+.studio-description-item-slogan {
+    font-size: 16px;
+    margin-left: 10%;
+    font-weight: 300;
+}
+
+.studio-description-item-name {
+    margin-left: 10%;
+    font-size: 18px;
+}
+
+.booking-studio-header p {
+    text-transform: uppercase;
+}
+
+.booking-studio-header .price {
+    color: #235A8F;
+}
+
+.studio-description-category {
+    display: flex;
+    justify-content: space-around;
+}
+
+.studio-description-category div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    padding: 10px;
+}
+
+.datepicker-studio {
+    margin-top: 20px;
+    position: relative;
+}
+
+.datepicker-studio .date-picker-box {
+    width: 60%;
+}
+
+.datepicker-studio .time-selects {
+    width: 60%;
+    margin-top: 20px;
+}
+
+.option-time {
+    display: flex;
+    align-items: center;
+
+}
+
+.option-times {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
