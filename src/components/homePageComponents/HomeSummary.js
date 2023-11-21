@@ -1,7 +1,7 @@
 import React from 'react'
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 import NearMeOutlinedIcon from '@mui/icons-material/NearMeOutlined';
-import About from './About';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 export default function HomeSummary() {
     return (
         <>
@@ -38,8 +38,13 @@ export default function HomeSummary() {
                     <img src='/images/Rectangle10.png' />
                     <p>Highlight</p>
                 </div>
+
+                <div className='arrow-down' onClick={() => window.location.href = "#about"}>
+                    <ArrowDownwardIcon />
+                </div>
             </div>
-            <About />
+
+
         </>
     )
 }

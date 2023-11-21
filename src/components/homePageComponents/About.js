@@ -1,10 +1,10 @@
 import React from 'react'
-
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 export default function About() {
     return (
-        <div className='about-container'>
+        <div id='about' className='about-container'>
             <div className='about-left'>
-                <h3 className='about-title' id='about'>About us</h3>
+                <h3 className='about-title'>About us</h3>
                 <div className='about-left-container'>
                     <p className='about-des'>We, as a passionate team with creativity and enthusiasm,
                         are proud to introduce our photography studio booking application.
@@ -20,6 +20,9 @@ export default function About() {
             </div>
             <div className='about-right'>
                 <img src='/images/Rectangle13.png' />
+            </div>
+            <div className='arrow-down' onClick={() => window.location.href = "#highlight"}>
+                <ArrowDownwardIcon />
             </div>
         </div>
     )
