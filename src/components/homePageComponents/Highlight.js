@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import HighlightStudio from './HighlightStudio'
 import UseHttpClient from '../../utils/httpClient'
 
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 export default function Highlight() {
     const {get} = UseHttpClient();
     const [studios, setStudios] = useState([])
@@ -21,7 +22,9 @@ export default function Highlight() {
                     })
                 }
             </div>
-
+            <div className='arrow-down' onClick={() => window.location.href = "#app"}>
+                <ArrowDownwardIcon />
+            </div>
         </div>
     )
 }

@@ -2,10 +2,14 @@ import React from 'react'
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 import NearMeOutlinedIcon from '@mui/icons-material/NearMeOutlined';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-export default function HomeSummary() {
+export default function HomeSummary({ setNav }) {
+    const handleRef = ref => {
+        window.location.href = ref
+        setNav(ref)
+    }
     return (
         <>
-            <div className='home-package'>
+            <div className='home-package' id='home'>
                 <div className='our-studio'>
                     <img src='/images/Rectangle7.png' />
                     <div className='our-studio-content'>
@@ -18,7 +22,7 @@ export default function HomeSummary() {
                 </div>
                 {/* mid */}
                 <div className='middle-content'>
-                    <div className='about'>
+                    <div className='about' onClick={() => handleRef("#about")}>
                         <p>About us</p>
                         <div className='about-content'>
                             <span>Discovery</span>
@@ -34,7 +38,7 @@ export default function HomeSummary() {
                     </div>
                 </div>
                 {/* 3rd */}
-                <div className='highlight'>
+                <div className='highlight' onClick={() => handleRef("#highlight")}>
                     <img src='/images/Rectangle10.png' />
                     <p>Highlight</p>
                 </div>
