@@ -4,20 +4,21 @@ import fileDownload from "js-file-download";
 import axios from "axios";
 export default function AppFramemates() {
     const handleDownload = () => {
-        axios
-            .get(
-                "https://github.com/thanh-dao/Framemates-studio-client/raw/thanh/app-release.apk",
-                {
-                    responseType: "blob",
-                    headers: {
-                        "Access-Control-Allow-Origin": "*",
-                        "Access-Control-Allow-Methods":
-                            "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-                        "Access-Control-Allow-Headers":
-                            "X-Requested-With, Content-Type, Authorization",
-                    },
-                }
-            )
+        console.log(1)
+        fetch(
+            "https://firebasestorage.googleapis.com/v0/b/framemates-363d4.appspot.com/o/apks%2Fapp-release.txt?alt=media&token=4e5352dc-cee2-4597-933e-834ddac25f36",
+            {
+                method: "GET",
+                // headers: {
+                //     "Access-Control-Allow-Origin": "*",
+                //     "Access-Control-Allow-Methods":
+                //         "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+                //     "Access-Control-Allow-Headers":
+                //         "X-Requested-With, Content-Type, Authorization",
+                // },
+            }
+        )
+            .then((res) => res.blob())
             .then((res) => {
                 fileDownload(res.data, "framemates.apk");
             });

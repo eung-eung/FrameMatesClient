@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.booking-part {
+    margin-top: 10%;
+
+}
+
+.step-by-step {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.step-item {
+    position: relative;
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.holder-step {
+    display: inline-block;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid #000000;
+}
+
+.step-item:not(:last-child):after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 1px;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000000;
+}
+
+.booking-part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-studio-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-studio {
+    border: 1px solid #000000;
+    width: 100%;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.body .sub-title {
+    font-size: 10px;
+    color: #000000;
+    font-weight: 200;
+}
+
+.studio-description {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.studio-description-image {
+    flex-basis: 10%;
+
+}
+
+.studio-description img {
+    width: 50px;
+    object-fit: contain;
+    height: 50px;
+}
+
+.studio-description .studio-description-item {
+    flex-basis: 60%;
+
+}
+
+.studio-description .studio-description-category {
+    flex-basis: 30%;
+
+}
+
+.studio-description-item-slogan {
+    font-size: 16px;
+    margin-left: 10%;
+    font-weight: 300;
+}
+
+.studio-description-item-name {
+    margin-left: 10%;
+    font-size: 18px;
+}
+
+.booking-studio-header p {
+    text-transform: uppercase;
+}
+
+.booking-studio-header .price {
+    color: #235A8F;
+}
+
+.studio-description-category {
+    display: flex;
+    justify-content: space-around;
+}
+
+.studio-description-category div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    padding: 10px;
+}
+
+.datepicker-studio {
+    margin-top: 20px;
+    position: relative;
+}
+
+.datepicker-studio .date-picker-box {
+    width: 60%;
+}
+
+.datepicker-studio .time-selects {
+    width: 60%;
+    margin-top: 20px;
+}
+
+.option-time {
+    display: flex;
+    align-items: center;
+
+}
+
+.option-times {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.order-summary-container {
+    border: 1px solid #000000;
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.order-summary-container .title {
+    font-size: 18px;
+}
+
+.order-middle img {
+    width: 70px;
+}
+
+.order-studio {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.order-slogan {
+    font-size: 13px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.studio-review {
+    margin-bottom: 20px;
+}
+
+.studio-review .review-total {
+    border: 1px solid #000000;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 8px;
+    margin-right: 20px;
+}
+
+.review-p {
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.order-details {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+.order-details-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.order-details-item .od-dt-item-name {
+    font-size: 14px;
+}
+
+.order-details-item .od-dt-item-value {
+    font-size: 18px;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-total-name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.order-total-value {
+    font-size: 18px;
+}
+
+.booking-btns {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-btn,
+.cancel-btn {
+    background: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    width: 70%;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.method {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000000;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.title-banking {
+    font-size: 18px;
+    margin-left: 30px;
+    font-weight: 500;
+}
+
+.qr-bank {
+    width: 100%;
+    object-fit: contain;
+}
+
+.booking-part2 {
+    display: block;
+    margin-top: 10%;
+
+}
+
+.booking-part2 .step-by-step {
+    justify-content: center;
+}
+
+.notify {
+    font-size: 40px;
+}
+
+.notify-box {
+    text-align: center;
+}

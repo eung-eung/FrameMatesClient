@@ -2,7 +2,7 @@ import axios from "axios";
 import UseToken from "./UseToken";
 
 const UseHttpClient = () => {
-    const baseApiUrl = "http://localhost:8080/api";
+    const baseApiUrl = "http://theclique.fptu.meu-solutions.com/api/";
     console.log(baseApiUrl);
 
     const { getToken } = UseToken();

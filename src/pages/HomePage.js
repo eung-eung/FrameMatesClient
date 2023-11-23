@@ -1,16 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from '../components/homePageComponents/header/Header'
 import HomeSummary from '../components/homePageComponents/HomeSummary'
 import Highlight from '../components/homePageComponents/Highlight'
 import About from '../components/homePageComponents/About'
 import AppFramemates from '../components/homePageComponents/AppFramemates'
+import UseHttpClient from '../utils/httpClient'
 
-export default function HomePage() {
-    const [nav, setNav] = useState("")
-
+export default function HomePage({ setNav }) {
+    const {put} = UseHttpClient();
+    useEffect(() => {
+        put("/views/web")
+    },[])
     return (
         <div className='container-home'>
-            <Header nav={nav} />
             <HomeSummary setNav={setNav} />
             <About />
             <Highlight />

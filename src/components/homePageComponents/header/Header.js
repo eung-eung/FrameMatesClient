@@ -6,8 +6,10 @@ import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import UseToken from "../../../utils/UseToken"
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 export default function Header({ nav }) {
     const [value, setValue] = React.useState('');
+    const navigate = useNavigate();
     const { getToken } = UseToken()
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -22,7 +24,10 @@ export default function Header({ nav }) {
     return (
         <div className='header'>
             <div className='left-header'>
-                <img src='/images/LOGOHeader.png' onClick={() => window.location.href = "#home"} />
+                <Link to="/">
+                    <img src='/images/LOGOHeader.png' />
+                </Link>
+
                 <Tabs
                     value={value}
                     onChange={handleChange}
@@ -32,7 +37,7 @@ export default function Header({ nav }) {
                 >
                     <Tab sx={{ fontWeight: 600, textTransform: "capitalize" }} value="#about" onClick={() => handleHref("#about")} label="About us" />
                     <Tab sx={{ fontWeight: 600, textTransform: "capitalize" }} value="#app" onClick={() => handleHref("#app")} label="App" />
-                    <Tab sx={{ fontWeight: 600, textTransform: "capitalize" }} value="#studio" label="Studio" />
+                    <Tab sx={{ fontWeight: 600, textTransform: "capitalize" }} label="Studio" onClick={() => navigate("/studio")} />
                 </Tabs>
             </div>
 

@@ -21,6 +21,11 @@ export default function UseToken() {
 
     }
 
+    const getRoleFromToken = () => {
+        const token = getToken();
+        if(token) return jwtDecode(token).role
+    }
+
     const setToken = (token) => {
         setCookie("user", token)
     }
@@ -31,7 +36,7 @@ export default function UseToken() {
     return {
         setToken,
         getToken,
-        removeToken
-
+        removeToken,
+        getRoleFromToken
     }
 }
